@@ -1,0 +1,26 @@
+# Part 1: Logical Operators
+print("Logical Operators Demo\n")
+# Prompting users for boolean inputs
+val1 = input("Enter the first boolean (True/False or 1/0): ").lower() in ['true', '1']
+val2 = input("Enter the second boolean (True/False or 1/0): ").lower() in ['true', '1']
+print(f"Input A: {val1}, Input B: {val2}")
+print(f"{val1} AND {val2} : {val1 and val2}")
+print(f"{val1} OR {val2} : {val1 or val2}")
+print(f"NOT {val1} : {not val1}")
+print(f"NOT {val2} : {not val2}")
+print()
+# Part 2: Bitwise operators
+print("Bitwise Operators Demo\n")
+a = 5 # Binary:0101 
+b = 3 # Binary:0011
+print(f"a = {a} ({bin(a)}), b = {b} ({bin(b)})")
+# Demonstrating various bitwise operations
+print(f"a & b (AND) : {a & b} ({bin(a & b)})")
+print(f"a | b (OR) : {a | b} ({bin(a | b)})")
+print(f"a ^ b (XOR) : {a ^ b} ({bin(a ^ b)})")
+print(f"~a (NOT) : {~a} ({bin(~a)})")
+print(f"~b (NOT) : {~b} ({bin(~b)})")
+print(f"a << 1 (Left Shift) : {a << 1} ({bin(a << 1)})")
+print(f"b >> 1 (Right Shift) : {b >> 1} ({bin(b >> 1)})")
+print(f"a >> 1 (Right Shift) : {a >> 1} ({bin(a >> 1)})")
+print(f"b << 1 (Left Shift) : {b << 1} ({bin(b << 1)})")
