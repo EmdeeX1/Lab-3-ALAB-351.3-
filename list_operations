@@ -1,0 +1,23 @@
+# 1. Ask the user to input numbers to populate the list
+#list_input = input("Enter five numbers separated by spaces: ")
+#Or
+list_input = input("Enter five numbers separated by spaces: ").split()
+numbers = [int(x) for x in list_input] 
+#print(f"You entered: {list_input}")
+#print the original list
+print(f"Numbers entered: {numbers}")
+# Use sorted() to print a sorted version without modifying the original list
+print(f"Sorted with sorted(): {sorted(numbers)}")
+print(f"List after sorted() (unchanged): {numbers}")
+# Use .sort() to sort the original list in place, then print the sorted list
+numbers.sort()
+print(f"Sorted with .sort() (in-place): {numbers}")
+# Add a new element (append an integer), then print the updated list
+numbers.append(55)
+print(f"After appending 55: {numbers}") 
+# Remove an element (by value), then print the updated list. #You can remove an element by index too.
+numbers.remove(5)
+print(f"After removing 5: {numbers}")
+# Use the reverse() method to reverse the list, then print the reversed list
+numbers.reverse()
+print(f"After reversing the list: {numbers}")
