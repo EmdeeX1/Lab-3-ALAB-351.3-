@@ -1,0 +1,15 @@
+# 1. Use a list of unsorted integers
+numbers = [1, 4, 3, 18, 15, 6]
+n = len(numbers)
+print(f"Original list: {numbers}\n")
+# 2. Implement the bubble sort algorithm using nested loops
+for i in range(n):
+# The outer loop ensures we pass through the list enough times
+    for j in range(0, n - i - 1):
+        if numbers[j] > numbers[j + 1]:
+            #Swap elements if they are in the wrong order
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+            # 3. Print the list at each pass of the outer loop to show progress
+    print(f"List after pass {i + 1}: {numbers}")
+    # 4. Finally, print the sorted list after the sorting is complete
+print(f"\nSorted list: {numbers}")
